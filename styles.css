@@ -1,3 +1,31 @@
+/*----------------------- Preloader -----------------------*/
+body.preloader-site {
+    overflow: hidden;
+}
+
+.preloader-wrapper {
+    height: 100%;
+    width: 100%;
+    background: #FFF;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 9999999;
+}
+
+.preloader-wrapper .preloader {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    width: 120px;
+}
+.preGIF{
+  width: 45px;
+  height: 45px;
+}
+
 body{
       font-family: 'Noto Sans', sans-serif;
 }
@@ -6,10 +34,34 @@ h1{
   text-align: center;
   margin-top: 30px;
 }
+h2{
+  font-family: 'Oswald', sans-serif;
+  font-size: 70px;
+  margin-left: 240px;
+    width: 800px;
+    cursor: default;
+}
+
+.slogan{
+  font-size: 20px;
+  position: absolute;
+  top: 75%;
+  width: 300px;
+  left: 38%;
+  color: white;
+  text-align: center;
+}
 .holdImg{
   width: 800px;
   height: 500px;
   background-color: #43BCCD;
+  display: flex;
+  flex-direction: column;
+}
+.logo{
+  width: 500px;
+  height: 650px;
+  margin-left: 200px;
 }
 .flexCenter{
   display: flex;

@@ -1,0 +1,126 @@
+/*----------------------- Preloader -----------------------*/
+body.preloader-site {
+    overflow: hidden;
+}
+
+.preloader-wrapper {
+    height: 100%;
+    width: 100%;
+    background: #FFF;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 9999999;
+}
+
+.preloader-wrapper .preloader {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    width: 120px;
+}
+.preGIF{
+  width: 45px;
+  height: 45px;
+}
+
+body{
+      font-family: 'Noto Sans', sans-serif;
+}
+h1{
+  font-size: 40px;
+  text-align: center;
+  margin-top: 30px;
+}
+h2{
+  font-family: 'Oswald', sans-serif;
+  font-size: 70px;
+  margin-left: 240px;
+    width: 800px;
+    cursor: default;
+}
+
+.slogan{
+  font-size: 20px;
+  position: absolute;
+  top: 75%;
+  width: 300px;
+  left: 38%;
+  color: white;
+  text-align: center;
+}
+.holdImg{
+  width: 800px;
+  height: 500px;
+  background-color: #43BCCD;
+  display: flex;
+  flex-direction: column;
+}
+.logo{
+  width: 500px;
+  height: 650px;
+  margin-left: 200px;
+}
+.flexCenter{
+  display: flex;
+  justify-content: center;
+}
+.menu{
+  display: flex;
+  flex-direction: column;
+  margin-left: 30px;
+  position: fixed;
+  bottom: 5%;
+}
+.textMenu{
+  margin-bottom: 5px;
+  font-size: 20px;
+  color: black;
+  text-decoration: none;
+}
+a:link{
+  color: black;
+  text-decoration: none;
+}
+.textMenu:visited{
+  color: black;
+  text-decoration: none;
+}
+.textMenu:hover{
+  color: #FF4D80;
+  text-decoration: none;
+  -webkit-transition: all 0.5s ease;
+-moz-transition: all 0.5s ease;
+-o-transition: all 0.5s ease;
+transition: all 0.5s ease;
+  transform: scale(1.2);
+}
+.abc{
+  margin-top: 200px;
+  margin-bottom: 100px;
+  width: 600px;
+  height: 300px;
+  background-color: #FF4D80;
+}
+.add{
+    margin-bottom: 100px;
+  width: 600px;
+  height: 300px;
+  background-color: #2AB3A6;
+}
+.sub{
+  margin-bottom: 100px;
+width: 600px;
+height: 300px;
+background-color: #EA3546;
+}
+button:focus{
+  outline:0;
+}
+h3{
+  font-size: 100px;
+  color: white;
+  text-align: center;
+}
