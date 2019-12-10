@@ -1,0 +1,28 @@
+body{
+      font-family: 'Noto Sans', sans-serif;
+}
+h1{
+  font-size: 40px;
+  text-align: center;
+  margin-top: 30px;
+}
+.int{
+  width: 600px;
+  text-align: center;
+  font-size: 50px;
+}
+.flexCenter{
+  display: flex;
+  justify-content: center;
+}
+.flewRow{
+  display: flex;
+  flex-direction: column;
+}
+.begin{
+  width: 400px;
+  height: 150px;
+  font-size: 50px;
+  margin-left: 100px;
+  background-color: #EA3546;
+}
