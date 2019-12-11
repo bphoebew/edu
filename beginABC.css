@@ -1,0 +1,53 @@
+/*----------------------- Preloader -----------------------*/
+body.preloader-site {
+    overflow: hidden;
+}
+
+.preloader-wrapper {
+    height: 100%;
+    width: 100%;
+    background: #FFF;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 9999999;
+}
+
+.preloader-wrapper .preloader {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    width: 120px;
+}
+.preGIF{
+  width: 45px;
+  height: 45px;
+}
+
+button:focus{
+  outline: 0;
+}
+
+body{
+      font-family: 'Noto Sans', sans-serif;
+}
+h1{
+  font-size: 40px;
+  text-align: center;
+  margin-top: 30px;
+}
+
+.box{
+  position: absolute;
+  bottom: 5%;
+  left: 38%;
+  width: 300px;
+  height: 200px;
+}
+
+.let{
+  width: 60px;
+  height: 100px;
+}

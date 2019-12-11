@@ -120,9 +120,6 @@ background-color: #EA3546;
 button:focus{
   outline:0;
 }
-button{
-  cursor: pointer;
-}
 h3{
   font-size: 100px;
   color: white;
