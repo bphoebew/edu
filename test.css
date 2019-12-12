@@ -1,3 +1,20 @@
+Skip to content
+Search or jump to…
+
+Pull requests
+Issues
+Marketplace
+Explore
+
+@bphoebew
+1
+00bphoebew/edu
+ Code Issues 0 Pull requests 0 Actions Projects 0 Wiki Security Insights Settings
+edu/beginABC.css
+@bphoebew bphoebew commit 2
+c1b64d1 yesterday
+53 lines (47 sloc)  772 Bytes
+
 /*----------------------- Preloader -----------------------*/
 body.preloader-site {
     overflow: hidden;
@@ -29,9 +46,7 @@ body.preloader-site {
 button:focus{
   outline: 0;
 }
-button{
-  color: white;
-}
+
 body{
       font-family: 'Noto Sans', sans-serif;
 }
@@ -40,23 +55,16 @@ h1{
   text-align: center;
   margin-top: 30px;
 }
-.int{
-  width: 600px;
-  text-align: center;
-  font-size: 50px;
+
+.box{
+  position: absolute;
+  bottom: 5%;
+  left: 38%;
+  width: 300px;
+  height: 200px;
 }
-.flexCenter{
-  display: flex;
-  justify-content: center;
-}
-.flewRow{
-  display: flex;
-  flex-direction: column;
-}
-.begin{
-  width: 400px;
-  height: 150px;
-  font-size: 50px;
-  margin-left: 100px;
-  background-color: #EA3546;
+
+.let{
+  width: 60px;
+  height: 100px;
 }
