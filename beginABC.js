@@ -44,7 +44,7 @@ let currentDroppable = null;
 
       ball.onmouseup = function() {
         document.removeEventListener('mousemove', onMouseMove);
-        bb.onmouseup = null;
+        ball.onmouseup = null;
       };
 
     };
@@ -143,7 +143,7 @@ let currentDroppable = null;
 
   };
 // END
-    dolphin.onmousedown = function(event) {
+dolphin.onmousedown = function(event) {
 
 let shiftX = event.clientX - dolphin.getBoundingClientRect().left;
 let shiftY = event.clientY - dolphin.getBoundingClientRect().top;
@@ -155,8 +155,8 @@ document.body.append(dolphin);
 moveAt(event.pageX, event.pageY);
 
 function moveAt(pageX, pageY) {
-dolphin.style.left = pageX - shiftX + 'px';
-dolphin.style.top = pageY - shiftY + 'px';
+  dolphin.style.left = pageX - shiftX + 'px';
+  dolphin.style.top = pageY - shiftY + 'px';
 }
 
 function onMouseMove(event) {
@@ -189,8 +189,54 @@ dolphin.onmouseup = function() {
 };
 
 };
-//END
+// end
+bed.onmousedown = function(event) {
 
+  let shiftX = event.clientX - bed.getBoundingClientRect().left;
+  let shiftY = event.clientY - bed.getBoundingClientRect().top;
+
+  bed.style.position = 'absolute';
+  bed.style.zIndex = 1000;
+  document.body.append(ball);
+
+  moveAt(event.pageX, event.pageY);
+
+  function moveAt(pageX, pageY) {
+    bed.style.left = pageX - shiftX + 'px';
+    bed.style.top = pageY - shiftY + 'px';
+  }
+
+  function onMouseMove(event) {
+    moveAt(event.pageX, event.pageY);
+
+    bed.hidden = true;
+    let elemBelow = document.elementFromPoint(event.clientX, event.clientY);
+    bed.hidden = false;
+
+    if (!elemBelow) return;
+
+    let droppableBelow = elemBelow.closest('.droppableB');
+    if (currentDroppable != droppableBelow) {
+      if (currentDroppable) { // null when we were not over a droppable before this event
+        leaveDroppable(currentDroppable);
+      }
+      currentDroppable = droppableBelow;
+      if (currentDroppable) { // null if we're not coming over a droppable now
+        // (maybe just left the droppable)
+        enterDroppable(currentDroppable);
+      }
+    }
+  }
+
+  document.addEventListener('mousemove', onMouseMove);
+
+bed.onmouseup = function() {
+    document.removeEventListener('mousemove', onMouseMove);
+    bed.onmouseup = null;
+  };
+
+};
+//end
   var dCollect = $('.dCollect');
   var bCollect = $('.bCollect');
   var word = $('.word');
@@ -220,9 +266,13 @@ dolphin.onmouseup = function() {
     }
     // else if (track == 3){
     //   track++;
+    // }else if (track == 4){
+    //   track++;
     //   dolphin.style.visibility = 'hidden';
-    //   // phone.style.visibility = "visible";
-    //   dCollect.append(`<img style = "width: 90px; height: 50px; margin-left: 20px; margin-top: 20px;" src = "https://i.pinimg.com/originals/c8/42/6e/c8426e10f0ffcb5b285d3eba7d9bce1a.png">`);
+    //   bed.style.visibility = 'visible';
+    //   word.empty();
+    //   word.append(`<h2 class = "words"> It's a <p class = "blue">BED </p> </h2>`);
+    //   dCollect.append(`<img style = "width: 90px; height: 50px; margin-left: 20px; margin-top: 20px;" src = "dolphin.png">`);
     // }
     }
 
@@ -243,5 +293,9 @@ dolphin.onmouseup = function() {
     };
 
     dolphin.ondragstart = function() {
+      return false;
+    };
+
+    bed.ondragstart = function() {
       return false;
     };

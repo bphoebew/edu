@@ -75,6 +75,12 @@ h1{
   height: 60px;
   visibility: hidden;
 }
+#bed{
+  cursor: pointer;
+  width: 90px;
+  height: 60px;
+  visibility: hidden;
+}
 #b{
     cursor: pointer;
   width: 200px;
@@ -131,4 +137,10 @@ height: 260px;
   color: blue;
   text-align: center;
         font-family: 'Noto Sans', sans-serif;
+}
+.mouth{
+  width: 500px;
+  height: 400px;
+  position: absolute;
+  right: 5%;
 }
