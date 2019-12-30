@@ -1,0 +1,105 @@
+/*----------------------- Preloader -----------------------*/
+body.preloader-site {
+    overflow: hidden;
+}
+
+.preloader-wrapper {
+    height: 100%;
+    width: 100%;
+    background: #FFF;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 9999999;
+}
+
+.preloader-wrapper .preloader {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    width: 120px;
+}
+.preGIF{
+  width: 45px;
+  height: 45px;
+}
+
+body{
+      font-family: 'Noto Sans', sans-serif;
+}
+h1{
+  font-size: 40px;
+  text-align: center;
+  margin-top: 30px;
+}
+h2{
+  font-family: 'Oswald', sans-serif;
+  font-size: 60px;
+  width: 800px;
+  cursor: default;
+  width: 800px;
+}
+
+.slogan{
+  font-size: 20px;
+  /* position: absolute;
+  top: 75%;
+    left: 38%; */
+    margin-top: -250px;
+    margin-left: 250px;
+  width: 300px;
+  color: white;
+  text-align: center;
+}
+.flexCol{
+  display: flex;
+  flex-direction: column;
+}
+.holdImg{
+  width: 800px;
+  height: 500px;
+  background-color: #43BCCD;
+  display: flex;
+  flex-direction: column;
+}
+.logo{
+  width: 500px;
+  height: 650px;
+  margin-left: 200px;
+}
+.flexCenter{
+  display: flex;
+  justify-content: center;
+}
+.menu{
+  display: flex;
+  flex-direction: column;
+  margin-left: 30px;
+  position: fixed;
+  top: 5%;
+}
+.textMenu{
+  margin-bottom: 5px;
+  font-size: 20px;
+  color: black;
+  text-decoration: none;
+}
+a:link{
+  color: black;
+  text-decoration: none;
+}
+.textMenu:visited{
+  color: black;
+  text-decoration: none;
+}
+.textMenu:hover{
+  color: #FF4D80;
+  text-decoration: none;
+  -webkit-transition: all 0.5s ease;
+-moz-transition: all 0.5s ease;
+-o-transition: all 0.5s ease;
+transition: all 0.5s ease;
+  transform: scale(1.2);
+}

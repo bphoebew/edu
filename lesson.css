@@ -31,8 +31,24 @@ body.preloader-site {
   justify-content: flex-start;
   flex-direction: row;
   margin-left: 50px;
+  margin-top: 10px;
 }
 
+.menuMiddle{
+  display: flex;
+  flex-direction: row;
+  position: absolute;
+  top: 1%;
+  left: 55%;
+}
+
+.menuRight{
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+    top: 6%;
+    right: 5%;
+}
 .logo{
   width: 100px;
   height: 145px;
@@ -51,6 +67,11 @@ body.preloader-site {
 .flexRow{
   display: flex;
   flex-direction: row;
+  margin: 0;
+}
+.flexCol{
+  display: flex;
+  flex-direction: column;
 }
 .textMenu{
     font-size: 20px;
@@ -64,38 +85,21 @@ body.preloader-site {
     margin-top: 10px;
     margin-bottom: 0px;
 }
-.menuMiddle{
-  display: flex;
-  flex-direction: row;
-  position: absolute;
-  top: 1%;
-  left: 55%;
-}
-.menuRight{
-  display: flex;
-  flex-direction: column;
-  position: absolute;
-    top: 6%;
-    right: 5%;
-}
 .info{
   font-family: 'Poppins', sans-serif;
-  font-size: 65px;
-  text-align: center;
-  position: absolute;
-  top: 25%;
-  left: 17%;
-  /* margin-left: 100px;
-  margin-top: -30px; */
+  font-size: 100px;
+  margin-left: 100px;
+  margin-top: -30px;
+  margin-bottom: 0px;
   /* margin-bottom: 50px; */
 }
 .infoPara{
   font-family: 'Open Sans', sans-serif;
   font-weight: 300;
-  font-size: 20px;
-  width: 450px;
+  font-size: 40px;
+  width: 500px;
   margin-left: 150px;
-    margin-top: 10px;
+  margin-top: 0px;
 }
 a:link{
   color: black;
@@ -108,19 +112,68 @@ a:visited{
   color: black;
   text-decoration: none;
 }
-.teach, .kid{
-  font-size: 30px;
-  margin-right: 10px;
-  font-family: 'Open Sans', sans-serif;
-  font-weight: 300;
-  width: 300px;
-  height: 180px;
-  background-color: blue;
-}
-.teach{
-  margin-left: 150px;
+.teamPic{
+  width: 400px;
+  height: 300px;
+  margin-top: 80px;
+  margin-left: 100px;
 }
 #one{
   width: 100%;
   height: 100vh;
+}
+#two{
+  width: 100%;
+  height: 100vh;
+}
+.title{
+  font-family: 'Poppins', sans-serif;
+  font-size: 100px;
+  padding-top: 10px;
+  margin: 0;
+  margin-bottom: 0px;
+  text-align: center;
+  /* margin-bottom: 50px; */
+}
+body{
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 300;
+}
+.abc{
+  margin-top: 200px;
+  margin-bottom: 100px;
+  width: 600px;
+  height: 300px;
+  background-color: #FF4D80;
+}
+.read{
+    margin-bottom: 100px;
+  width: 600px;
+  height: 300px;
+  background-color: #2AB3A6;
+}
+.spell{
+  margin-bottom: 100px;
+width: 600px;
+height: 300px;
+background-color: #EA3546;
+}
+button:focus{
+  outline:0;
+}
+button{
+  cursor: pointer;
+}
+h2{
+  font-size: 70px;
+  color: white;
+}
+h3{
+  font-size: 100px;
+  color: white;
+  text-align: center;
+}
+.flexCenter{
+  display: flex;
+  justify-content: center;
 }
