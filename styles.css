@@ -31,6 +31,9 @@ body.preloader-site {
   justify-content: flex-start;
   flex-direction: row;
   margin-left: 50px;
+  /* background-color: white;
+  width: 220px;
+  height: 110px; */
 }
 
 .logo{
@@ -40,6 +43,7 @@ body.preloader-site {
 .name{
   font-size: 20px;
   margin-left: 0px;
+  color: white;
   margin-top: 29px;
   margin-left: -15px;
   font-family: 'Open Sans', sans-serif;
@@ -57,6 +61,7 @@ body.preloader-site {
       font-family: 'Open Sans', sans-serif;
       margin-right: 50px;
         margin-top: 45px;
+        /* color: white; */
 }
 .textMenuT{
     font-size: 20px;
@@ -69,7 +74,7 @@ body.preloader-site {
   flex-direction: row;
   position: absolute;
   top: 1%;
-  left: 55%;
+  left: 60%;
 }
 .menuRight{
   display: flex;
@@ -85,6 +90,7 @@ body.preloader-site {
   position: absolute;
   top: 25%;
   left: 17%;
+  color: black;
   /* margin-left: 100px;
   margin-top: -30px; */
   /* margin-bottom: 50px; */
@@ -123,4 +129,52 @@ a:visited{
 #one{
   width: 100%;
   height: 100vh;
+}
+.ipadOne{
+  width: 600px;
+  height: 400px;
+  position: absolute;
+  left: -5%;
+  top: 0;
+  z-index: -9;
+  object-fit: cover;
+}
+.ipadTwo{
+  width: 350px;
+  height: 250px;
+  position: absolute;
+  left: 10%;
+  top: 60%;
+  z-index: -9;
+  object-fit: cover;
+}
+.ipadThr{
+  width: 450px;
+  height: 300px;
+  position: absolute;
+  left: 35%;
+  top: -10%;
+  z-index: -9;
+  object-fit: cover;
+}
+.ipadFr{
+  width: 450px;
+  height: 300px;
+  position: absolute;
+  left: 65%;
+  top: 40%;
+  z-index: -10;
+  object-fit: cover;
+}
+.mainI{
+  width: 600px;
+  height: 400px;
+  position: absolute;
+  left: 30%;
+  top: 30%;
+  z-index: -9;
+  object-fit: cover;
+}
+img{
+  opacity: 0.8;
 }

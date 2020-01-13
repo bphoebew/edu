@@ -39,7 +39,7 @@ body.preloader-site {
   flex-direction: row;
   position: absolute;
   top: 1%;
-  left: 55%;
+  left: 60%;
 }
 
 .menuRight{
@@ -176,4 +176,14 @@ h3{
 .flexCenter{
   display: flex;
   justify-content: center;
+}
+.warn{
+  position: fixed;
+  top: 30%;
+  color: white;
+  text-align: center;
+  font-size: 30px;
+  margin: 100px;
+  background-color: #43BCCD;
+  padding: 50px;
 }
