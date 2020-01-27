@@ -1,0 +1,57 @@
+/*----------------------- Preloader -----------------------*/
+body.preloader-site {
+    overflow: hidden;
+}
+
+.preloader-wrapper {
+    height: 100%;
+    width: 100%;
+    background: #FFF;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 9999999;
+}
+
+.preloader-wrapper .preloader {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    width: 120px;
+}
+.preGIF{
+  width: 45px;
+  height: 45px;
+}
+
+.flexCenter{
+  display: flex;
+  justify-content: center;
+}
+video:focus{
+  outline: 0;
+}
+video{
+  margin: 0;
+}
+.home{
+  font-family: 'Play', sans-serif;
+  font-size: 40px;
+  width: 250px;
+  height: 80px;
+      background-color: #FF4D80;
+  border-color: transparent;
+  color: white;
+  margin-top: 20px;
+  margin-bottom: 0;
+  margin-left: 20px;
+}
+button:hover
+{
+  -webkit-transform: scale(1.1);
+  -ms-transform: scale(1.1);
+  transform: scale(1.1);
+  background-color: #EA3546;
+}
