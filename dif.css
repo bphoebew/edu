@@ -99,7 +99,7 @@ body.preloader-site {
   width: 500px;
   margin-left: 150px;
   margin-top: 0px;
-  text-align: center;
+  text-align: left;
 }
 a:link{
   color: black;
@@ -175,12 +175,6 @@ a:visited{
     font-family: 'Poppins', sans-serif;
         text-align: center;
 }
-.des{
-  font-size: 15px;
-  margin: 0;
-  text-align: center;
-  font-family: 'Poppins', sans-serif;
-}
 body{
   font-family: 'Open Sans', sans-serif;
   font-weight: 300;
@@ -204,9 +198,20 @@ body{
   flex-direction: row;
   margin-bottom: 150px;
 }
+.flexCol{
+  display: flex;
+  flex-direction: column;
+}
 .des{
   font-size: 20px;
   text-align: center;
   margin-left: 50px;
   margin-right: 100px;
+}
+.desT{
+  font-size: 30px;
+  text-align: center;
+  margin-left: 50px;
+  margin-right: 100px;
+    font-family: 'Poppins', sans-serif;
 }

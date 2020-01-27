@@ -43,7 +43,7 @@ body.preloader-site {
 .name{
   font-size: 20px;
   margin-left: 0px;
-  color: white;
+  color: black;
   margin-top: 29px;
   margin-left: -15px;
   font-family: 'Open Sans', sans-serif;
@@ -175,6 +175,6 @@ a:visited{
   z-index: -9;
   object-fit: cover;
 }
-img{
+/* img{
   opacity: 0.8;
-}
+} */
