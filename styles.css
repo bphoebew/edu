@@ -175,6 +175,29 @@ a:visited{
   z-index: -9;
   object-fit: cover;
 }
+.first{
+  width: 450px;
+  height: 300px;
+  object-fit: cover;
+  margin-left: 100px;
+  margin-bottom: 50px;
+}
+.sec{
+  width: 450px;
+  height: 300px;
+  object-fit: cover;
+  margin-right: 100px;
+  margin-bottom: 50px;
+
+}
+.flexLeft{
+  display: flex;
+  justify-content: flex-start;
+}
+.flexRight{
+  display: flex;
+  justify-content: flex-end;
+}
 /* img{
   opacity: 0.8;
 } */
